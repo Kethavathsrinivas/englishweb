@@ -1,0 +1,63 @@
+/* General navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #4267b2;
+  position: relative;
+}
+
+.navbar-left .logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Adjust height according to the logo size */
+  float: left;
+  margin-left: -40px;
+}
+
+/* Hide the mobile menu icon by default */
+.mobile-menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.mobile-menu-icon .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 4px 0;
+}
+
+/* Desktop view: show login button */
+.navbar-right {
+  display: flex;
+}
+
+.navbar-right .login-button {
+  width: 80px;
+  height: 40px;
+  /* padding: 20px; */
+  background-color: #4267b2;
+  border: 1px solid #ddd;
+  box-shadow: #4267b2;
+  border-radius: 8px;
+  /* margin: 20px auto; */
+  color:white;
+}
+
+.navbar-right .login-button:hover {
+  background-color: #4267b2;
+  border-color:white;
+}
+@media (max-width: 768px) {
+  .navbar-left .logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Adjust height according to the logo size */
+    float: left;
+    margin-left: -10px;
+  }
+  
+}
